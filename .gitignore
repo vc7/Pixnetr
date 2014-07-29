@@ -7,4 +7,9 @@
 *.moved-aside/
 DerivedData
 
+# API credential files
 Pixnetr/PXDefines.*
+
+# CocoaPod
+Pods/*
+Podfile.lock
