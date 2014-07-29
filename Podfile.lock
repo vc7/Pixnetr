@@ -1,0 +1,32 @@
+PODS:
+  - Bolts (1.1.0)
+  - cocoa-oauth (0.0.1):
+    - NSData+Base64 (~> 1.0)
+  - Facebook-iOS-SDK (3.16.2):
+    - Bolts
+  - NSData+Base64 (1.0.0)
+  - Parse-iOS-SDK (1.2.19):
+    - Facebook-iOS-SDK (~> 3.7)
+  - PIXNET-iOS-SDK (1.0.5):
+    - cocoa-oauth (~> 0.0.1)
+  - PixnetrKit (1.0):
+    - Parse-iOS-SDK
+    - PIXNET-iOS-SDK
+
+DEPENDENCIES:
+  - PixnetrKit (from `../PixnetrKit/`)
+
+EXTERNAL SOURCES:
+  PixnetrKit:
+    :path: ../PixnetrKit/
+
+SPEC CHECKSUMS:
+  Bolts: 91c2af8eae1d44e1dd75946a5b0ae04a43ea43e4
+  cocoa-oauth: 418c70e6ce4130fa7ebdf05232018c8f391030d8
+  Facebook-iOS-SDK: 34eef640c2cc4c8618ba0f574ad2b290e07f1b4e
+  NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
+  Parse-iOS-SDK: 5e1f7e649a02f1cc19e73cc95bd43d7778848314
+  PIXNET-iOS-SDK: 680d4806910247d21508ef8692f48d1c3c3b6491
+  PixnetrKit: bc3d785dfff26bd29c9dab79547f5f7ddcf8b9b6
+
+COCOAPODS: 0.33.1
