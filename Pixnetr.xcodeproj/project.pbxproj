@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF1A1B24198770D800785BF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1B23198770D800785BF4 /* Foundation.framework */; };
+		BF1A1B26198770D800785BF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1B25198770D800785BF4 /* CoreGraphics.framework */; };
+		BF1A1B28198770D800785BF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1B27198770D800785BF4 /* UIKit.framework */; };
+		BF1A1B2E198770D800785BF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1A1B2C198770D800785BF4 /* InfoPlist.strings */; };
+		BF1A1B30198770D800785BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B2F198770D800785BF4 /* main.m */; };
+		BF1A1B34198770D800785BF4 /* PXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B33198770D800785BF4 /* PXAppDelegate.m */; };
+		BF1A1B36198770D800785BF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1A1B35198770D800785BF4 /* Images.xcassets */; };
+		BF1A1B3D198770D800785BF4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1B3C198770D800785BF4 /* XCTest.framework */; };
+		BF1A1B3E198770D800785BF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1B23198770D800785BF4 /* Foundation.framework */; };
+		BF1A1B3F198770D800785BF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1B27198770D800785BF4 /* UIKit.framework */; };
+		BF1A1B47198770D800785BF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1A1B45198770D800785BF4 /* InfoPlist.strings */; };
+		BF1A1B49198770D800785BF4 /* PixnetrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B48198770D800785BF4 /* PixnetrTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF1A1B40198770D800785BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1A1B18198770D800785BF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1A1B1F198770D800785BF4;
+			remoteInfo = Pixnetr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF1A1B20198770D800785BF4 /* Pixnetr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixnetr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1A1B23198770D800785BF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF1A1B25198770D800785BF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF1A1B27198770D800785BF4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF1A1B2B198770D800785BF4 /* Pixnetr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pixnetr-Info.plist"; sourceTree = "<group>"; };
+		BF1A1B2D198770D800785BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF1A1B2F198770D800785BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF1A1B31198770D800785BF4 /* Pixnetr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pixnetr-Prefix.pch"; sourceTree = "<group>"; };
+		BF1A1B32198770D800785BF4 /* PXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXAppDelegate.h; sourceTree = "<group>"; };
+		BF1A1B33198770D800785BF4 /* PXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXAppDelegate.m; sourceTree = "<group>"; };
+		BF1A1B35198770D800785BF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF1A1B3B198770D800785BF4 /* PixnetrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixnetrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1A1B3C198770D800785BF4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BF1A1B44198770D800785BF4 /* PixnetrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PixnetrTests-Info.plist"; sourceTree = "<group>"; };
+		BF1A1B46198770D800785BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF1A1B48198770D800785BF4 /* PixnetrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixnetrTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF1A1B1D198770D800785BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A1B26198770D800785BF4 /* CoreGraphics.framework in Frameworks */,
+				BF1A1B28198770D800785BF4 /* UIKit.framework in Frameworks */,
+				BF1A1B24198770D800785BF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1A1B38198770D800785BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A1B3D198770D800785BF4 /* XCTest.framework in Frameworks */,
+				BF1A1B3F198770D800785BF4 /* UIKit.framework in Frameworks */,
+				BF1A1B3E198770D800785BF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF1A1B17198770D800785BF4 = {
+			isa = PBXGroup;
+			children = (
+				BF1A1B29198770D800785BF4 /* Pixnetr */,
+				BF1A1B42198770D800785BF4 /* PixnetrTests */,
+				BF1A1B22198770D800785BF4 /* Frameworks */,
+				BF1A1B21198770D800785BF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF1A1B21198770D800785BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A1B20198770D800785BF4 /* Pixnetr.app */,
+				BF1A1B3B198770D800785BF4 /* PixnetrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF1A1B22198770D800785BF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A1B23198770D800785BF4 /* Foundation.framework */,
+				BF1A1B25198770D800785BF4 /* CoreGraphics.framework */,
+				BF1A1B27198770D800785BF4 /* UIKit.framework */,
+				BF1A1B3C198770D800785BF4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF1A1B29198770D800785BF4 /* Pixnetr */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A1B32198770D800785BF4 /* PXAppDelegate.h */,
+				BF1A1B33198770D800785BF4 /* PXAppDelegate.m */,
+				BF1A1B35198770D800785BF4 /* Images.xcassets */,
+				BF1A1B2A198770D800785BF4 /* Supporting Files */,
+			);
+			path = Pixnetr;
+			sourceTree = "<group>";
+		};
+		BF1A1B2A198770D800785BF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A1B2B198770D800785BF4 /* Pixnetr-Info.plist */,
+				BF1A1B2C198770D800785BF4 /* InfoPlist.strings */,
+				BF1A1B2F198770D800785BF4 /* main.m */,
+				BF1A1B31198770D800785BF4 /* Pixnetr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF1A1B42198770D800785BF4 /* PixnetrTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A1B48198770D800785BF4 /* PixnetrTests.m */,
+				BF1A1B43198770D800785BF4 /* Supporting Files */,
+			);
+			path = PixnetrTests;
+			sourceTree = "<group>";
+		};
+		BF1A1B43198770D800785BF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1A1B44198770D800785BF4 /* PixnetrTests-Info.plist */,
+				BF1A1B45198770D800785BF4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF1A1B1F198770D800785BF4 /* Pixnetr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1A1B4C198770D800785BF4 /* Build configuration list for PBXNativeTarget "Pixnetr" */;
+			buildPhases = (
+				BF1A1B1C198770D800785BF4 /* Sources */,
+				BF1A1B1D198770D800785BF4 /* Frameworks */,
+				BF1A1B1E198770D800785BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pixnetr;
+			productName = Pixnetr;
+			productReference = BF1A1B20198770D800785BF4 /* Pixnetr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF1A1B3A198770D800785BF4 /* PixnetrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1A1B4F198770D800785BF4 /* Build configuration list for PBXNativeTarget "PixnetrTests" */;
+			buildPhases = (
+				BF1A1B37198770D800785BF4 /* Sources */,
+				BF1A1B38198770D800785BF4 /* Frameworks */,
+				BF1A1B39198770D800785BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF1A1B41198770D800785BF4 /* PBXTargetDependency */,
+			);
+			name = PixnetrTests;
+			productName = PixnetrTests;
+			productReference = BF1A1B3B198770D800785BF4 /* PixnetrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF1A1B18198770D800785BF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PX;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Vincent Chen";
+				TargetAttributes = {
+					BF1A1B3A198770D800785BF4 = {
+						TestTargetID = BF1A1B1F198770D800785BF4;
+					};
+				};
+			};
+			buildConfigurationList = BF1A1B1B198770D800785BF4 /* Build configuration list for PBXProject "Pixnetr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF1A1B17198770D800785BF4;
+			productRefGroup = BF1A1B21198770D800785BF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF1A1B1F198770D800785BF4 /* Pixnetr */,
+				BF1A1B3A198770D800785BF4 /* PixnetrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF1A1B1E198770D800785BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A1B2E198770D800785BF4 /* InfoPlist.strings in Resources */,
+				BF1A1B36198770D800785BF4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1A1B39198770D800785BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A1B47198770D800785BF4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF1A1B1C198770D800785BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A1B34198770D800785BF4 /* PXAppDelegate.m in Sources */,
+				BF1A1B30198770D800785BF4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1A1B37198770D800785BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1A1B49198770D800785BF4 /* PixnetrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF1A1B41198770D800785BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF1A1B1F198770D800785BF4 /* Pixnetr */;
+			targetProxy = BF1A1B40198770D800785BF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF1A1B2C198770D800785BF4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1A1B2D198770D800785BF4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF1A1B45198770D800785BF4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1A1B46198770D800785BF4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF1A1B4A198770D800785BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF1A1B4B198770D800785BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF1A1B4D198770D800785BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixnetr/Pixnetr-Prefix.pch";
+				INFOPLIST_FILE = "Pixnetr/Pixnetr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF1A1B4E198770D800785BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixnetr/Pixnetr-Prefix.pch";
+				INFOPLIST_FILE = "Pixnetr/Pixnetr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BF1A1B50198770D800785BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pixnetr.app/Pixnetr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixnetr/Pixnetr-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PixnetrTests/PixnetrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BF1A1B51198770D800785BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pixnetr.app/Pixnetr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixnetr/Pixnetr-Prefix.pch";
+				INFOPLIST_FILE = "PixnetrTests/PixnetrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF1A1B1B198770D800785BF4 /* Build configuration list for PBXProject "Pixnetr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1A1B4A198770D800785BF4 /* Debug */,
+				BF1A1B4B198770D800785BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1A1B4C198770D800785BF4 /* Build configuration list for PBXNativeTarget "Pixnetr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1A1B4D198770D800785BF4 /* Debug */,
+				BF1A1B4E198770D800785BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF1A1B4F198770D800785BF4 /* Build configuration list for PBXNativeTarget "PixnetrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1A1B50198770D800785BF4 /* Debug */,
+				BF1A1B51198770D800785BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF1A1B18198770D800785BF4 /* Project object */;
+}
