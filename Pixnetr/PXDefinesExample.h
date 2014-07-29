@@ -18,3 +18,5 @@ extern NSString *const kPXParseClientKey;
 
 extern NSString *const kPXPixnetConsumerKey;
 extern NSString *const kPXPixnetConsumerSecret;
+
+#endif
