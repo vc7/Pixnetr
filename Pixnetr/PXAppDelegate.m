@@ -13,6 +13,9 @@
 #import "PXDefines.h"
 
 #import "PXHotAlbumsViewController.h"
+#import "PXSearchTableViewController.h"
+#import "PXProfileTableViewController.h"
+#import "PXInfoTableViewController.h"
 
 @interface PXAppDelegate ()
 
@@ -37,7 +40,10 @@
     // Bootstrap the Services
     [self _bootstrapServices];
     
-    self.mainTabBarController.viewControllers = @[self.hotAlbumsViewController];
+    self.mainTabBarController.viewControllers = @[self.hotAlbumsViewController,
+                                                  [[PXSearchTableViewController alloc] initWithStyle:UITableViewStylePlain],
+                                                  [[PXProfileTableViewController alloc] initWithStyle:UITableViewStylePlain],
+                                                  [[PXInfoTableViewController alloc] initWithStyle:UITableViewStylePlain]];
     
     self.window.rootViewController = self.mainTabBarController;
     

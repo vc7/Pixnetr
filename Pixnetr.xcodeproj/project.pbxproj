@@ -21,6 +21,9 @@
 		BF1A1B49198770D800785BF4 /* PixnetrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B48198770D800785BF4 /* PixnetrTests.m */; };
 		BF1A1B57198778F300785BF4 /* PXDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B56198778F300785BF4 /* PXDefines.m */; };
 		BFCE745A1988E14B00A5160E /* PXHotAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */; };
+		BFCE745F1988E96F00A5160E /* PXSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE745E1988E96F00A5160E /* PXSearchTableViewController.m */; };
+		BFCE74631988EBAB00A5160E /* PXProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74621988EBAB00A5160E /* PXProfileTableViewController.m */; };
+		BFCE74671988EBD200A5160E /* PXInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74661988EBD200A5160E /* PXInfoTableViewController.m */; };
 		F2E4B27B4B6E44FE88E51AB8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D957E1367E67495C80455A5B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,12 @@
 		BF1A1B56198778F300785BF4 /* PXDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXDefines.m; sourceTree = "<group>"; };
 		BFCE74581988E14B00A5160E /* PXHotAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXHotAlbumsViewController.h; sourceTree = "<group>"; };
 		BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXHotAlbumsViewController.m; sourceTree = "<group>"; };
+		BFCE745D1988E96F00A5160E /* PXSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSearchTableViewController.h; sourceTree = "<group>"; };
+		BFCE745E1988E96F00A5160E /* PXSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSearchTableViewController.m; sourceTree = "<group>"; };
+		BFCE74611988EBAB00A5160E /* PXProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXProfileTableViewController.h; sourceTree = "<group>"; };
+		BFCE74621988EBAB00A5160E /* PXProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXProfileTableViewController.m; sourceTree = "<group>"; };
+		BFCE74651988EBD200A5160E /* PXInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXInfoTableViewController.h; sourceTree = "<group>"; };
+		BFCE74661988EBD200A5160E /* PXInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXInfoTableViewController.m; sourceTree = "<group>"; };
 		D957E1367E67495C80455A5B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,6 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				BFCE745B1988E68100A5160E /* Hot Albums */,
+				BFCE745C1988E8CD00A5160E /* Search */,
+				BFCE74601988EB9600A5160E /* Profile */,
+				BFCE74641988EBB400A5160E /* Info */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -174,6 +186,33 @@
 				BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */,
 			);
 			name = "Hot Albums";
+			sourceTree = "<group>";
+		};
+		BFCE745C1988E8CD00A5160E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE745D1988E96F00A5160E /* PXSearchTableViewController.h */,
+				BFCE745E1988E96F00A5160E /* PXSearchTableViewController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		BFCE74601988EB9600A5160E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE74611988EBAB00A5160E /* PXProfileTableViewController.h */,
+				BFCE74621988EBAB00A5160E /* PXProfileTableViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		BFCE74641988EBB400A5160E /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE74651988EBD200A5160E /* PXInfoTableViewController.h */,
+				BFCE74661988EBD200A5160E /* PXInfoTableViewController.m */,
+			);
+			name = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +348,11 @@
 			files = (
 				BFCE745A1988E14B00A5160E /* PXHotAlbumsViewController.m in Sources */,
 				BF1A1B57198778F300785BF4 /* PXDefines.m in Sources */,
+				BFCE745F1988E96F00A5160E /* PXSearchTableViewController.m in Sources */,
 				BF1A1B34198770D800785BF4 /* PXAppDelegate.m in Sources */,
 				BF1A1B30198770D800785BF4 /* main.m in Sources */,
+				BFCE74631988EBAB00A5160E /* PXProfileTableViewController.m in Sources */,
+				BFCE74671988EBD200A5160E /* PXInfoTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
