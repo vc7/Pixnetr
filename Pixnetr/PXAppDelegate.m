@@ -10,6 +10,10 @@
 
 @implementation PXAppDelegate
 
++ (PXAppDelegate *)sharedAppDelegate {
+	return (PXAppDelegate *)[[UIApplication sharedApplication] delegate];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
