@@ -35,6 +35,9 @@
         self.authorLabel.textColor = [UIColor lightGrayColor];
         self.authorLabel.font = [UIFont systemFontOfSize:9];
         
+        [self.bookmarkButton setImage:[UIImage imageNamed:@"bookmark_normal.png"] forState:UIControlStateNormal];
+        [self.bookmarkButton setImage:[UIImage imageNamed:@"bookmark_selected.png"] forState:UIControlStateSelected];
+        
         self.albumPreviewImageView.backgroundColor = [UIColor lightGrayColor];
         self.albumPreviewImageView.contentMode = UIViewContentModeScaleToFill;
         
@@ -50,6 +53,7 @@
         [self addSubview:self.avatarImageView];
         [self addSubview:self.titleLabel];
         [self addSubview:self.authorLabel];
+        [self addSubview:self.bookmarkButton];
         [self addSubview:self.albumPreviewImageView];
         [self addSubview:self.countLabel];
         [self addSubview:self.typeLabel];
@@ -62,7 +66,7 @@
     self.avatarImageView.frame = (CGRect){ 5, 5, 23, 23 };
     self.titleLabel.frame = (CGRect){ CGRectGetMaxX(self.avatarImageView.frame) + 5, 5, CGRectGetWidth(self.frame) - ((23 + 5 * 2) * 2), 13 };
     self.authorLabel.frame = (CGRect){ CGRectGetMinX(self.titleLabel.frame), CGRectGetMaxY(self.titleLabel.frame), CGRectGetWidth(self.titleLabel.frame), 10 };
-    self.bookmarkButton.frame = (CGRect){ CGRectGetMaxX(self.titleLabel.frame) + 5, 5, 23, 23 };
+    self.bookmarkButton.frame = (CGRect){ CGRectGetWidth(self.frame) - (23 + 5), 5, 23, 23 };
     
     self.albumPreviewImageView.frame = (CGRect){ 0, CGRectGetMaxY(self.avatarImageView.frame) + 5, CGRectGetWidth(self.frame), CGRectGetWidth(self.frame) };
     
