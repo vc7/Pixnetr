@@ -55,7 +55,28 @@ static NSString *AlbumCellIdentifier = @"AlbumCellIdentifier";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"熱門相簿";
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(_startRefresh) forControlEvents:UIControlEventValueChanged];
+    
+    [self.collectionView addSubview:self.refreshControl];
+    self.collectionView.alwaysBounceVertical = YES;
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    
+    [self.collectionView registerClass:[PXAlbumCell class] forCellWithReuseIdentifier:AlbumCellIdentifier];
+    
+    [self _startRefresh];
+    
+    self.loadMore = NO;
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]
+                                             initWithTitle:@"回去"
+                                             style:UIBarButtonItemStylePlain
+                                             target:nil
+                                             action:nil];
 }
 
 - (void)didReceiveMemoryWarning
