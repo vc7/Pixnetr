@@ -43,9 +43,9 @@
     [self _applyStyleSheet];
     
     self.mainTabBarController.viewControllers = @[[[UINavigationController alloc] initWithRootViewController:self.hotAlbumsViewController],
-                                                  [[PXSearchTableViewController alloc] initWithStyle:UITableViewStylePlain],
-                                                  [[PXProfileTableViewController alloc] initWithStyle:UITableViewStylePlain],
-                                                  [[PXInfoTableViewController alloc] initWithStyle:UITableViewStylePlain]];
+                                                  [[UINavigationController alloc] initWithRootViewController:[[PXSearchTableViewController alloc] initWithStyle:UITableViewStylePlain]],
+                                                  [[UINavigationController alloc] initWithRootViewController:[[PXProfileTableViewController alloc] initWithStyle:UITableViewStylePlain]],
+                                                  [[UINavigationController alloc] initWithRootViewController:[[PXInfoTableViewController alloc] initWithStyle:UITableViewStylePlain]]];
     
     self.window.rootViewController = self.mainTabBarController;
     
