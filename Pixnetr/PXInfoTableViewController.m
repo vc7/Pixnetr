@@ -21,6 +21,7 @@
         // Custom initialization
         
         self.title = @"Info";
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title image:[UIImage imageNamed:@"tab_info.png"] tag:self.tabBarItem.tag];
     }
     return self;
 }

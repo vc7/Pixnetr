@@ -25,6 +25,18 @@
     return self;
 }
 
+- (id)initWithCollectionViewLayout:(UICollectionViewLayout *)layout
+{
+    self = [super initWithCollectionViewLayout:layout];
+    if (self) {
+        
+        self.title = @"熱門相簿";
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title image:[UIImage imageNamed:@"tab_hot.png"] tag:self.tabBarItem.tag];
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -23,6 +23,14 @@
 		BF2E89B6198A416800BD00D9 /* PXPhotosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2E89B5198A416800BD00D9 /* PXPhotosListViewController.m */; };
 		BF9BA7E2198AA2850084E3AD /* PXAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9BA7E1198AA2850084E3AD /* PXAlbumCell.m */; };
 		BF9BA7EC198AC2190084E3AD /* UIColor+PixnetrAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9BA7EB198AC2190084E3AD /* UIColor+PixnetrAdditions.m */; };
+		BF9BA7F6198ADEB80084E3AD /* tab_hot.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7EE198ADEB80084E3AD /* tab_hot.png */; };
+		BF9BA7F7198ADEB80084E3AD /* tab_hot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7EF198ADEB80084E3AD /* tab_hot@2x.png */; };
+		BF9BA7F8198ADEB80084E3AD /* tab_info.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7F0198ADEB80084E3AD /* tab_info.png */; };
+		BF9BA7F9198ADEB80084E3AD /* tab_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7F1198ADEB80084E3AD /* tab_info@2x.png */; };
+		BF9BA7FA198ADEB80084E3AD /* tab_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7F2198ADEB80084E3AD /* tab_profile.png */; };
+		BF9BA7FB198ADEB80084E3AD /* tab_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7F3198ADEB80084E3AD /* tab_profile@2x.png */; };
+		BF9BA7FC198ADEB80084E3AD /* tab_search.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7F4198ADEB80084E3AD /* tab_search.png */; };
+		BF9BA7FD198ADEB80084E3AD /* tab_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7F5198ADEB80084E3AD /* tab_search@2x.png */; };
 		BFCE745A1988E14B00A5160E /* PXHotAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */; };
 		BFCE745F1988E96F00A5160E /* PXSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE745E1988E96F00A5160E /* PXSearchTableViewController.m */; };
 		BFCE74631988EBAB00A5160E /* PXProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74621988EBAB00A5160E /* PXProfileTableViewController.m */; };
@@ -66,6 +74,14 @@
 		BF9BA7E1198AA2850084E3AD /* PXAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXAlbumCell.m; sourceTree = "<group>"; };
 		BF9BA7EA198AC2190084E3AD /* UIColor+PixnetrAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PixnetrAdditions.h"; sourceTree = "<group>"; };
 		BF9BA7EB198AC2190084E3AD /* UIColor+PixnetrAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PixnetrAdditions.m"; sourceTree = "<group>"; };
+		BF9BA7EE198ADEB80084E3AD /* tab_hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_hot.png; sourceTree = "<group>"; };
+		BF9BA7EF198ADEB80084E3AD /* tab_hot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_hot@2x.png"; sourceTree = "<group>"; };
+		BF9BA7F0198ADEB80084E3AD /* tab_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_info.png; sourceTree = "<group>"; };
+		BF9BA7F1198ADEB80084E3AD /* tab_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_info@2x.png"; sourceTree = "<group>"; };
+		BF9BA7F2198ADEB80084E3AD /* tab_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_profile.png; sourceTree = "<group>"; };
+		BF9BA7F3198ADEB80084E3AD /* tab_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_profile@2x.png"; sourceTree = "<group>"; };
+		BF9BA7F4198ADEB80084E3AD /* tab_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_search.png; sourceTree = "<group>"; };
+		BF9BA7F5198ADEB80084E3AD /* tab_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_search@2x.png"; sourceTree = "<group>"; };
 		BFCE74581988E14B00A5160E /* PXHotAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXHotAlbumsViewController.h; sourceTree = "<group>"; };
 		BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXHotAlbumsViewController.m; sourceTree = "<group>"; };
 		BFCE745D1988E96F00A5160E /* PXSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSearchTableViewController.h; sourceTree = "<group>"; };
@@ -144,6 +160,7 @@
 				BF9BA7E9198AC1EF0084E3AD /* Categories */,
 				BF1A1B35198770D800785BF4 /* Images.xcassets */,
 				BF1A1B2A198770D800785BF4 /* Supporting Files */,
+				BF9BA7ED198ADEB80084E3AD /* Resources */,
 			);
 			path = Pixnetr;
 			sourceTree = "<group>";
@@ -203,6 +220,21 @@
 				BF9BA7EB198AC2190084E3AD /* UIColor+PixnetrAdditions.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		BF9BA7ED198ADEB80084E3AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF9BA7EE198ADEB80084E3AD /* tab_hot.png */,
+				BF9BA7EF198ADEB80084E3AD /* tab_hot@2x.png */,
+				BF9BA7F0198ADEB80084E3AD /* tab_info.png */,
+				BF9BA7F1198ADEB80084E3AD /* tab_info@2x.png */,
+				BF9BA7F2198ADEB80084E3AD /* tab_profile.png */,
+				BF9BA7F3198ADEB80084E3AD /* tab_profile@2x.png */,
+				BF9BA7F4198ADEB80084E3AD /* tab_search.png */,
+				BF9BA7F5198ADEB80084E3AD /* tab_search@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BFCE74501988CE4700A5160E /* View Controllers */ = {
@@ -332,8 +364,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9BA7FC198ADEB80084E3AD /* tab_search.png in Resources */,
+				BF9BA7F7198ADEB80084E3AD /* tab_hot@2x.png in Resources */,
 				BF1A1B2E198770D800785BF4 /* InfoPlist.strings in Resources */,
+				BF9BA7F8198ADEB80084E3AD /* tab_info.png in Resources */,
 				BF1A1B36198770D800785BF4 /* Images.xcassets in Resources */,
+				BF9BA7FA198ADEB80084E3AD /* tab_profile.png in Resources */,
+				BF9BA7F9198ADEB80084E3AD /* tab_info@2x.png in Resources */,
+				BF9BA7FB198ADEB80084E3AD /* tab_profile@2x.png in Resources */,
+				BF9BA7FD198ADEB80084E3AD /* tab_search@2x.png in Resources */,
+				BF9BA7F6198ADEB80084E3AD /* tab_hot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

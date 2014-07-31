@@ -20,7 +20,8 @@
     if (self) {
         // Custom initialization
         
-        self.title = @"搜尋";
+        self.title = @"Search";
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:self.title image:[UIImage imageNamed:@"tab_search.png"] tag:self.tabBarItem.tag];
     }
     return self;
 }
