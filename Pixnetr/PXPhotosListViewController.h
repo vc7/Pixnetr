@@ -10,4 +10,6 @@
 
 @interface PXPhotosListViewController : UICollectionViewController
 
+@property (strong, nonatomic) PXKAlbum *album;
+
 @end
