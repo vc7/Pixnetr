@@ -7,6 +7,7 @@
 //
 
 #import <CHTCollectionViewWaterfallLayout.h>
+#import <SDWebImage/SDWebImageManager.h>
 
 #import "PXHotAlbumsViewController.h"
 #import "PXPhotosListViewController.h"
@@ -61,6 +62,72 @@ static NSString *AlbumCellIdentifier = @"AlbumCellIdentifier";
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.albumsArray.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    PXAlbumCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:AlbumCellIdentifier forIndexPath:indexPath];
+    PXKAlbum *album = self.albumsArray[indexPath.item];
+    
+    cell.titleLabel.text = album.title;
+    cell.authorLabel.text = album.author;
+    cell.typeLabel.textLabel.text = album.categoryName;
+    cell.countLabel.text = [NSString stringWithFormat:@"共 %d 張", album.photosCount];
+    
+    cell.albumPreviewImageView.image = nil;
+    cell.avatarImageView.image = nil;
+    
+    cell.bookmarkButton.selected = NO;
+    
+    [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:[PXKURLGenerator generateAvatarImageURLStringWithUsername:album.author size:(CGSize){ 46, 46 }]]
+                                                    options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                                                    }
+                                                  completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                                                      if ( ! error) {
+                                                          cell.avatarImageView.image = image;
+                                                      }
+                                                  }];
+    
+    [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:[PXKURLGenerator generateAlbumPreviewImageURLStringWithAlbum:album size:(CGSize){ 320, 320 }]]
+                                                    options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                                                    }
+                                                  completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                                                      if ( ! error) {
+                                                          cell.albumPreviewImageView.image = image;
+                                                      }
+                                                  }];
+    
+    return cell;
+}
+
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    PXKAlbum *selectedAlbum = self.albumsArray[indexPath.item];
+    
+    self.photosListViewController.title = selectedAlbum.title;
+    self.photosListViewController.album = selectedAlbum;
+    
+    [self.navigationController pushViewController:self.photosListViewController animated:YES];
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    CGFloat bottomEdge = scrollView.contentOffset.y + scrollView.frame.size.height;
+    if (bottomEdge >= scrollView.contentSize.height && ! [self isLoadMore]) {
+        
+        [self _loadMore];
+    }
 }
 
 #pragma mark - CHTCollectionViewDelegateWaterfallLayout
