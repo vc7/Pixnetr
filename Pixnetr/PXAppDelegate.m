@@ -6,7 +6,6 @@
 //  Copyright (c) 2014年 Vincent Chen. All rights reserved.
 //
 
-#import <PXKService.h>
 #import <CHTCollectionViewWaterfallLayout.h>
 
 #import "PXAppDelegate.h"
@@ -16,6 +15,8 @@
 #import "PXSearchTableViewController.h"
 #import "PXProfileTableViewController.h"
 #import "PXInfoTableViewController.h"
+
+#import "UIColor+PixnetrAdditions.h"
 
 @interface PXAppDelegate ()
 
@@ -41,7 +42,7 @@
     [self _bootstrapServices];
     [self _applyStyleSheet];
     
-    self.mainTabBarController.viewControllers = @[self.hotAlbumsViewController,
+    self.mainTabBarController.viewControllers = @[[[UINavigationController alloc] initWithRootViewController:self.hotAlbumsViewController],
                                                   [[PXSearchTableViewController alloc] initWithStyle:UITableViewStylePlain],
                                                   [[PXProfileTableViewController alloc] initWithStyle:UITableViewStylePlain],
                                                   [[PXInfoTableViewController alloc] initWithStyle:UITableViewStylePlain]];
@@ -53,10 +54,13 @@
     return YES;
 }
 
-- (void)_bootstrapServices
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-    [PXKService setParseApplicationId:kPXParseApplicationID clientKey:kPXParseClientKey];
-    [PXKService setPixnetConsumerKey:kPXPixnetConsumerKey consumerSecret:kPXPixnetConsumerSecret callbackURL:@"http://devtool.pixnet.pro/index/cb"];
+    return [PXKService handleFBOpenURL:url sourceApplication:sourceApplication];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [PXKService handleFBDidBecomeActive];
 }
 
 #pragma mark - Accessors
@@ -98,10 +102,12 @@
 
 - (void)_applyStyleSheet
 {
-    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:1 green:0.2 blue:0.3 alpha:1];
+    [UINavigationBar appearance].barTintColor = [UIColor pixnetrMainColor];
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     [UINavigationBar appearance].barStyle = UIBarStyleBlack;
-    [UITabBar appearance].tintColor = [UIColor colorWithRed:1 green:0.2 blue:0.3 alpha:1];
+    [UINavigationBar appearance].tintColor = [UIColor colorWithWhite:1 alpha:0.7];
+    
+    [UITabBar appearance].tintColor = [UIColor pixnetrMainColor];
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "PXAlbumCell.h"
+#import "UIColor+PixnetrAdditions.h"
 
 @implementation PXAlbumCell
 
@@ -44,7 +45,7 @@
         self.typeLabel.textLabel.font = [UIFont boldSystemFontOfSize:9];
         self.typeLabel.cornerRadius = 4;
         self.typeLabel.badgeAlignment = SAMBadgeViewAlignmentRight;
-        self.typeLabel.badgeColor = [UIColor colorWithRed:1 green:0.2 blue:0.3 alpha:1];
+        self.typeLabel.badgeColor = [UIColor pixnetrMainColor];
         
         [self addSubview:self.avatarImageView];
         [self addSubview:self.titleLabel];
