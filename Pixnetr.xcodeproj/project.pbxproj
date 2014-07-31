@@ -21,6 +21,7 @@
 		BF1A1B49198770D800785BF4 /* PixnetrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B48198770D800785BF4 /* PixnetrTests.m */; };
 		BF1A1B57198778F300785BF4 /* PXDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B56198778F300785BF4 /* PXDefines.m */; };
 		BF2E89B6198A416800BD00D9 /* PXPhotosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2E89B5198A416800BD00D9 /* PXPhotosListViewController.m */; };
+		BF9BA7E2198AA2850084E3AD /* PXAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9BA7E1198AA2850084E3AD /* PXAlbumCell.m */; };
 		BFCE745A1988E14B00A5160E /* PXHotAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */; };
 		BFCE745F1988E96F00A5160E /* PXSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE745E1988E96F00A5160E /* PXSearchTableViewController.m */; };
 		BFCE74631988EBAB00A5160E /* PXProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74621988EBAB00A5160E /* PXProfileTableViewController.m */; };
@@ -60,6 +61,8 @@
 		BF1A1B56198778F300785BF4 /* PXDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXDefines.m; sourceTree = "<group>"; };
 		BF2E89B4198A416800BD00D9 /* PXPhotosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXPhotosListViewController.h; sourceTree = "<group>"; };
 		BF2E89B5198A416800BD00D9 /* PXPhotosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXPhotosListViewController.m; sourceTree = "<group>"; };
+		BF9BA7E0198AA2850084E3AD /* PXAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXAlbumCell.h; sourceTree = "<group>"; };
+		BF9BA7E1198AA2850084E3AD /* PXAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXAlbumCell.m; sourceTree = "<group>"; };
 		BFCE74581988E14B00A5160E /* PXHotAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXHotAlbumsViewController.h; sourceTree = "<group>"; };
 		BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXHotAlbumsViewController.m; sourceTree = "<group>"; };
 		BFCE745D1988E96F00A5160E /* PXSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSearchTableViewController.h; sourceTree = "<group>"; };
@@ -134,6 +137,7 @@
 				BF1A1B32198770D800785BF4 /* PXAppDelegate.h */,
 				BF1A1B33198770D800785BF4 /* PXAppDelegate.m */,
 				BFCE74501988CE4700A5160E /* View Controllers */,
+				BF9BA7E3198AA28E0084E3AD /* Views */,
 				BF1A1B35198770D800785BF4 /* Images.xcassets */,
 				BF1A1B2A198770D800785BF4 /* Supporting Files */,
 			);
@@ -169,6 +173,23 @@
 				BF1A1B45198770D800785BF4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF9BA7E3198AA28E0084E3AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF9BA7E8198AA2B50084E3AD /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BF9BA7E8198AA2B50084E3AD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF9BA7E0198AA2850084E3AD /* PXAlbumCell.h */,
+				BF9BA7E1198AA2850084E3AD /* PXAlbumCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		BFCE74501988CE4700A5160E /* View Controllers */ = {
@@ -352,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCE745A1988E14B00A5160E /* PXHotAlbumsViewController.m in Sources */,
+				BF9BA7E2198AA2850084E3AD /* PXAlbumCell.m in Sources */,
 				BF1A1B57198778F300785BF4 /* PXDefines.m in Sources */,
 				BFCE745F1988E96F00A5160E /* PXSearchTableViewController.m in Sources */,
 				BF2E89B6198A416800BD00D9 /* PXPhotosListViewController.m in Sources */,
