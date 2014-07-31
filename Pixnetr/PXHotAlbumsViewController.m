@@ -23,8 +23,6 @@ static NSString *AlbumCellIdentifier = @"AlbumCellIdentifier";
 @property (strong, nonatomic) NSMutableArray *albumsArray;
 @property (nonatomic) NSUInteger currentPage;
 
-@property (strong, nonatomic) PXPhotosListViewController *photosListViewController;
-
 @end
 
 @implementation PXHotAlbumsViewController
@@ -132,12 +130,13 @@ static NSString *AlbumCellIdentifier = @"AlbumCellIdentifier";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    PXPhotosListViewController *photosListViewController = [[PXPhotosListViewController alloc] initWithCollectionViewLayout:[[CHTCollectionViewWaterfallLayout alloc] init]];
     PXKAlbum *selectedAlbum = self.albumsArray[indexPath.item];
     
-    self.photosListViewController.title = selectedAlbum.title;
-    self.photosListViewController.album = selectedAlbum;
+    photosListViewController.title = selectedAlbum.title;
+    photosListViewController.album = selectedAlbum;
     
-    [self.navigationController pushViewController:self.photosListViewController animated:YES];
+    [self.navigationController pushViewController:photosListViewController animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -167,14 +166,6 @@ static NSString *AlbumCellIdentifier = @"AlbumCellIdentifier";
     }
     
     return _albumsArray;
-}
-
-- (PXPhotosListViewController *)photosListViewController
-{
-    if ( ! _photosListViewController) {
-        _photosListViewController = [[PXPhotosListViewController alloc] initWithCollectionViewLayout:[[CHTCollectionViewWaterfallLayout alloc] init]];
-    }
-    return _photosListViewController;
 }
 
 #pragma mark - Private Method
