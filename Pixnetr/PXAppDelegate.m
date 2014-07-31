@@ -39,6 +39,7 @@
     
     // Bootstrap the Services
     [self _bootstrapServices];
+    [self _applyStyleSheet];
     
     self.mainTabBarController.viewControllers = @[self.hotAlbumsViewController,
                                                   [[PXSearchTableViewController alloc] initWithStyle:UITableViewStylePlain],
@@ -85,6 +86,22 @@
     }
     
     return _waterfallLayout;
+}
+
+#pragma mark - Private Methods
+
+- (void)_bootstrapServices
+{
+    [PXKService setParseApplicationId:kPXParseApplicationID clientKey:kPXParseClientKey];
+    [PXKService setPixnetConsumerKey:kPXPixnetConsumerKey consumerSecret:kPXPixnetConsumerSecret callbackURL:@"http://devtool.pixnet.pro/index/cb"];
+}
+
+- (void)_applyStyleSheet
+{
+    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:1 green:0.2 blue:0.3 alpha:1];
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+    [UINavigationBar appearance].barStyle = UIBarStyleBlack;
+    [UITabBar appearance].tintColor = [UIColor colorWithRed:1 green:0.2 blue:0.3 alpha:1];
 }
 
 @end
