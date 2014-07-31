@@ -31,6 +31,12 @@
 		BF9BA7FB198ADEB80084E3AD /* tab_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7F3198ADEB80084E3AD /* tab_profile@2x.png */; };
 		BF9BA7FC198ADEB80084E3AD /* tab_search.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7F4198ADEB80084E3AD /* tab_search.png */; };
 		BF9BA7FD198ADEB80084E3AD /* tab_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA7F5198ADEB80084E3AD /* tab_search@2x.png */; };
+		BF9BA800198AE3370084E3AD /* PXListedPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9BA7FF198AE3370084E3AD /* PXListedPhotoCell.m */; };
+		BF9BA805198AE5520084E3AD /* bookmark_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA801198AE5520084E3AD /* bookmark_normal.png */; };
+		BF9BA806198AE5520084E3AD /* bookmark_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA802198AE5520084E3AD /* bookmark_normal@2x.png */; };
+		BF9BA807198AE5520084E3AD /* bookmark_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA803198AE5520084E3AD /* bookmark_selected.png */; };
+		BF9BA808198AE5520084E3AD /* bookmark_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA804198AE5520084E3AD /* bookmark_selected@2x.png */; };
+		BF9BA80B198B039A0084E3AD /* PXPhotoLightBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9BA80A198B039A0084E3AD /* PXPhotoLightBoxViewController.m */; };
 		BFCE745A1988E14B00A5160E /* PXHotAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */; };
 		BFCE745F1988E96F00A5160E /* PXSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE745E1988E96F00A5160E /* PXSearchTableViewController.m */; };
 		BFCE74631988EBAB00A5160E /* PXProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74621988EBAB00A5160E /* PXProfileTableViewController.m */; };
@@ -82,6 +88,14 @@
 		BF9BA7F3198ADEB80084E3AD /* tab_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_profile@2x.png"; sourceTree = "<group>"; };
 		BF9BA7F4198ADEB80084E3AD /* tab_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_search.png; sourceTree = "<group>"; };
 		BF9BA7F5198ADEB80084E3AD /* tab_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_search@2x.png"; sourceTree = "<group>"; };
+		BF9BA7FE198AE3370084E3AD /* PXListedPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXListedPhotoCell.h; sourceTree = "<group>"; };
+		BF9BA7FF198AE3370084E3AD /* PXListedPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXListedPhotoCell.m; sourceTree = "<group>"; };
+		BF9BA801198AE5520084E3AD /* bookmark_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark_normal.png; sourceTree = "<group>"; };
+		BF9BA802198AE5520084E3AD /* bookmark_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookmark_normal@2x.png"; sourceTree = "<group>"; };
+		BF9BA803198AE5520084E3AD /* bookmark_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark_selected.png; sourceTree = "<group>"; };
+		BF9BA804198AE5520084E3AD /* bookmark_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookmark_selected@2x.png"; sourceTree = "<group>"; };
+		BF9BA809198B039A0084E3AD /* PXPhotoLightBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXPhotoLightBoxViewController.h; sourceTree = "<group>"; };
+		BF9BA80A198B039A0084E3AD /* PXPhotoLightBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXPhotoLightBoxViewController.m; sourceTree = "<group>"; };
 		BFCE74581988E14B00A5160E /* PXHotAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXHotAlbumsViewController.h; sourceTree = "<group>"; };
 		BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXHotAlbumsViewController.m; sourceTree = "<group>"; };
 		BFCE745D1988E96F00A5160E /* PXSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSearchTableViewController.h; sourceTree = "<group>"; };
@@ -209,6 +223,8 @@
 			children = (
 				BF9BA7E0198AA2850084E3AD /* PXAlbumCell.h */,
 				BF9BA7E1198AA2850084E3AD /* PXAlbumCell.m */,
+				BF9BA7FE198AE3370084E3AD /* PXListedPhotoCell.h */,
+				BF9BA7FF198AE3370084E3AD /* PXListedPhotoCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -225,6 +241,10 @@
 		BF9BA7ED198ADEB80084E3AD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BF9BA801198AE5520084E3AD /* bookmark_normal.png */,
+				BF9BA802198AE5520084E3AD /* bookmark_normal@2x.png */,
+				BF9BA803198AE5520084E3AD /* bookmark_selected.png */,
+				BF9BA804198AE5520084E3AD /* bookmark_selected@2x.png */,
 				BF9BA7EE198ADEB80084E3AD /* tab_hot.png */,
 				BF9BA7EF198ADEB80084E3AD /* tab_hot@2x.png */,
 				BF9BA7F0198ADEB80084E3AD /* tab_info.png */,
@@ -255,6 +275,8 @@
 				BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */,
 				BF2E89B4198A416800BD00D9 /* PXPhotosListViewController.h */,
 				BF2E89B5198A416800BD00D9 /* PXPhotosListViewController.m */,
+				BF9BA809198B039A0084E3AD /* PXPhotoLightBoxViewController.h */,
+				BF9BA80A198B039A0084E3AD /* PXPhotoLightBoxViewController.m */,
 			);
 			name = "Hot Albums";
 			sourceTree = "<group>";
@@ -366,12 +388,16 @@
 			files = (
 				BF9BA7FC198ADEB80084E3AD /* tab_search.png in Resources */,
 				BF9BA7F7198ADEB80084E3AD /* tab_hot@2x.png in Resources */,
+				BF9BA807198AE5520084E3AD /* bookmark_selected.png in Resources */,
 				BF1A1B2E198770D800785BF4 /* InfoPlist.strings in Resources */,
 				BF9BA7F8198ADEB80084E3AD /* tab_info.png in Resources */,
 				BF1A1B36198770D800785BF4 /* Images.xcassets in Resources */,
 				BF9BA7FA198ADEB80084E3AD /* tab_profile.png in Resources */,
+				BF9BA808198AE5520084E3AD /* bookmark_selected@2x.png in Resources */,
 				BF9BA7F9198ADEB80084E3AD /* tab_info@2x.png in Resources */,
 				BF9BA7FB198ADEB80084E3AD /* tab_profile@2x.png in Resources */,
+				BF9BA805198AE5520084E3AD /* bookmark_normal.png in Resources */,
+				BF9BA806198AE5520084E3AD /* bookmark_normal@2x.png in Resources */,
 				BF9BA7FD198ADEB80084E3AD /* tab_search@2x.png in Resources */,
 				BF9BA7F6198ADEB80084E3AD /* tab_hot.png in Resources */,
 			);
@@ -428,10 +454,12 @@
 				BF9BA7EC198AC2190084E3AD /* UIColor+PixnetrAdditions.m in Sources */,
 				BFCE745A1988E14B00A5160E /* PXHotAlbumsViewController.m in Sources */,
 				BF9BA7E2198AA2850084E3AD /* PXAlbumCell.m in Sources */,
+				BF9BA800198AE3370084E3AD /* PXListedPhotoCell.m in Sources */,
 				BF1A1B57198778F300785BF4 /* PXDefines.m in Sources */,
 				BFCE745F1988E96F00A5160E /* PXSearchTableViewController.m in Sources */,
 				BF2E89B6198A416800BD00D9 /* PXPhotosListViewController.m in Sources */,
 				BF1A1B34198770D800785BF4 /* PXAppDelegate.m in Sources */,
+				BF9BA80B198B039A0084E3AD /* PXPhotoLightBoxViewController.m in Sources */,
 				BF1A1B30198770D800785BF4 /* main.m in Sources */,
 				BFCE74631988EBAB00A5160E /* PXProfileTableViewController.m in Sources */,
 				BFCE74671988EBD200A5160E /* PXInfoTableViewController.m in Sources */,
