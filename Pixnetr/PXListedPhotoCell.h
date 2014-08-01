@@ -13,8 +13,9 @@
 @property (strong, nonatomic) UIImageView *mainPhotoImageView;
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) NSString *originalPageURLString;
+@property (strong, nonatomic) UIButton *likeButton;
+@property (strong, nonatomic) UIButton *shareButton;
 
-@property (nonatomic) NSInteger likedCount;
 @property (nonatomic) CGFloat photoRatio;
 
 @end
