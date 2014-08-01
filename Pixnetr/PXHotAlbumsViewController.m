@@ -172,6 +172,7 @@ static NSString *AlbumCellIdentifier = @"AlbumCellIdentifier";
 
 - (void)_startRefresh
 {
+    [self.refreshControl beginRefreshing];
     [PXKAlbum fetchHotAlbumsWithCategoryIDs:@[@"0"] page:1 perPage:20 resultBlock:^(NSArray *array, NSError *error) {
         if ( ! error) {
             
