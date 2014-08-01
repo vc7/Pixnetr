@@ -37,6 +37,13 @@
 		BF9BA807198AE5520084E3AD /* bookmark_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA803198AE5520084E3AD /* bookmark_selected.png */; };
 		BF9BA808198AE5520084E3AD /* bookmark_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA804198AE5520084E3AD /* bookmark_selected@2x.png */; };
 		BF9BA80B198B039A0084E3AD /* PXPhotoLightBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9BA80A198B039A0084E3AD /* PXPhotoLightBoxViewController.m */; };
+		BF9BA80E198B28040084E3AD /* heart_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA80C198B28040084E3AD /* heart_gray.png */; };
+		BF9BA80F198B28040084E3AD /* heart_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA80D198B28040084E3AD /* heart_gray@2x.png */; };
+		BF9BA817198B32BD0084E3AD /* heart_red.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA813198B32BD0084E3AD /* heart_red.png */; };
+		BF9BA818198B32BD0084E3AD /* heart_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA814198B32BD0084E3AD /* heart_red@2x.png */; };
+		BF9BA819198B32BD0084E3AD /* share_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA815198B32BD0084E3AD /* share_gray.png */; };
+		BF9BA81A198B32BD0084E3AD /* share_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9BA816198B32BD0084E3AD /* share_gray@2x.png */; };
+		BF9BA81D198B3C780084E3AD /* PXPhotoLightBoxMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9BA81C198B3C780084E3AD /* PXPhotoLightBoxMainTableViewCell.m */; };
 		BFCE745A1988E14B00A5160E /* PXHotAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */; };
 		BFCE745F1988E96F00A5160E /* PXSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE745E1988E96F00A5160E /* PXSearchTableViewController.m */; };
 		BFCE74631988EBAB00A5160E /* PXProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74621988EBAB00A5160E /* PXProfileTableViewController.m */; };
@@ -96,6 +103,14 @@
 		BF9BA804198AE5520084E3AD /* bookmark_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookmark_selected@2x.png"; sourceTree = "<group>"; };
 		BF9BA809198B039A0084E3AD /* PXPhotoLightBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXPhotoLightBoxViewController.h; sourceTree = "<group>"; };
 		BF9BA80A198B039A0084E3AD /* PXPhotoLightBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXPhotoLightBoxViewController.m; sourceTree = "<group>"; };
+		BF9BA80C198B28040084E3AD /* heart_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_gray.png; sourceTree = "<group>"; };
+		BF9BA80D198B28040084E3AD /* heart_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart_gray@2x.png"; sourceTree = "<group>"; };
+		BF9BA813198B32BD0084E3AD /* heart_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_red.png; sourceTree = "<group>"; };
+		BF9BA814198B32BD0084E3AD /* heart_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart_red@2x.png"; sourceTree = "<group>"; };
+		BF9BA815198B32BD0084E3AD /* share_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share_gray.png; sourceTree = "<group>"; };
+		BF9BA816198B32BD0084E3AD /* share_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_gray@2x.png"; sourceTree = "<group>"; };
+		BF9BA81B198B3C780084E3AD /* PXPhotoLightBoxMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXPhotoLightBoxMainTableViewCell.h; sourceTree = "<group>"; };
+		BF9BA81C198B3C780084E3AD /* PXPhotoLightBoxMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXPhotoLightBoxMainTableViewCell.m; sourceTree = "<group>"; };
 		BFCE74581988E14B00A5160E /* PXHotAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXHotAlbumsViewController.h; sourceTree = "<group>"; };
 		BFCE74591988E14B00A5160E /* PXHotAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXHotAlbumsViewController.m; sourceTree = "<group>"; };
 		BFCE745D1988E96F00A5160E /* PXSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSearchTableViewController.h; sourceTree = "<group>"; };
@@ -225,6 +240,8 @@
 				BF9BA7E1198AA2850084E3AD /* PXAlbumCell.m */,
 				BF9BA7FE198AE3370084E3AD /* PXListedPhotoCell.h */,
 				BF9BA7FF198AE3370084E3AD /* PXListedPhotoCell.m */,
+				BF9BA81B198B3C780084E3AD /* PXPhotoLightBoxMainTableViewCell.h */,
+				BF9BA81C198B3C780084E3AD /* PXPhotoLightBoxMainTableViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -245,6 +262,12 @@
 				BF9BA802198AE5520084E3AD /* bookmark_normal@2x.png */,
 				BF9BA803198AE5520084E3AD /* bookmark_selected.png */,
 				BF9BA804198AE5520084E3AD /* bookmark_selected@2x.png */,
+				BF9BA80C198B28040084E3AD /* heart_gray.png */,
+				BF9BA80D198B28040084E3AD /* heart_gray@2x.png */,
+				BF9BA813198B32BD0084E3AD /* heart_red.png */,
+				BF9BA814198B32BD0084E3AD /* heart_red@2x.png */,
+				BF9BA815198B32BD0084E3AD /* share_gray.png */,
+				BF9BA816198B32BD0084E3AD /* share_gray@2x.png */,
 				BF9BA7EE198ADEB80084E3AD /* tab_hot.png */,
 				BF9BA7EF198ADEB80084E3AD /* tab_hot@2x.png */,
 				BF9BA7F0198ADEB80084E3AD /* tab_info.png */,
@@ -386,18 +409,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9BA817198B32BD0084E3AD /* heart_red.png in Resources */,
+				BF9BA818198B32BD0084E3AD /* heart_red@2x.png in Resources */,
 				BF9BA7FC198ADEB80084E3AD /* tab_search.png in Resources */,
 				BF9BA7F7198ADEB80084E3AD /* tab_hot@2x.png in Resources */,
 				BF9BA807198AE5520084E3AD /* bookmark_selected.png in Resources */,
 				BF1A1B2E198770D800785BF4 /* InfoPlist.strings in Resources */,
+				BF9BA80F198B28040084E3AD /* heart_gray@2x.png in Resources */,
 				BF9BA7F8198ADEB80084E3AD /* tab_info.png in Resources */,
 				BF1A1B36198770D800785BF4 /* Images.xcassets in Resources */,
 				BF9BA7FA198ADEB80084E3AD /* tab_profile.png in Resources */,
 				BF9BA808198AE5520084E3AD /* bookmark_selected@2x.png in Resources */,
 				BF9BA7F9198ADEB80084E3AD /* tab_info@2x.png in Resources */,
+				BF9BA80E198B28040084E3AD /* heart_gray.png in Resources */,
 				BF9BA7FB198ADEB80084E3AD /* tab_profile@2x.png in Resources */,
 				BF9BA805198AE5520084E3AD /* bookmark_normal.png in Resources */,
+				BF9BA81A198B32BD0084E3AD /* share_gray@2x.png in Resources */,
 				BF9BA806198AE5520084E3AD /* bookmark_normal@2x.png in Resources */,
+				BF9BA819198B32BD0084E3AD /* share_gray.png in Resources */,
 				BF9BA7FD198ADEB80084E3AD /* tab_search@2x.png in Resources */,
 				BF9BA7F6198ADEB80084E3AD /* tab_hot.png in Resources */,
 			);
@@ -451,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9BA81D198B3C780084E3AD /* PXPhotoLightBoxMainTableViewCell.m in Sources */,
 				BF9BA7EC198AC2190084E3AD /* UIColor+PixnetrAdditions.m in Sources */,
 				BFCE745A1988E14B00A5160E /* PXHotAlbumsViewController.m in Sources */,
 				BF9BA7E2198AA2850084E3AD /* PXAlbumCell.m in Sources */,
