@@ -8,6 +8,8 @@
 
 #import "PXProfileTableViewController.h"
 
+static NSString *CellIdentifier = @"CellIdentifier";
+
 @interface PXProfileTableViewController ()
 
 @end
@@ -42,13 +44,65 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    if ( ! [PXKUser currentUser]) {
+        cell.textLabel.text = @"Facebook 登入";
+        
+        UIButton *loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [loginButton setTitle:@"登入" forState:UIControlStateNormal];
+        [loginButton addTarget:self action:@selector(_logIn) forControlEvents:UIControlEventTouchUpInside];
+        loginButton.frame = (CGRect){ 0, 0, 50, 35 };
+        
+        cell.accessoryView = loginButton;
+        
+    } else {
+        cell.textLabel.text = @"已經登入 Facebook";
+        
+        UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [logoutButton setTitle:@"登出" forState:UIControlStateNormal];
+        [logoutButton addTarget:self action:@selector(_logOut) forControlEvents:UIControlEventTouchUpInside];
+        logoutButton.frame = (CGRect){ 0, 0, 50, 35 };
+        
+        cell.accessoryView = logoutButton;
+    }
+    
+    
+    return cell;
+}
+
+#pragma mark - Button Actions
+
+- (void)_logIn
+{
+    [PXKUser logInWithResultBlock:^(PXKUser *user, NSError *error) {
+        if ( ! error) {
+            [self.tableView reloadData];
+        }
+    }];
+}
+
+- (void)_logOut
+{
+    [PXKUser logOut];
+    [self.tableView reloadData];
 }
 
 @end
