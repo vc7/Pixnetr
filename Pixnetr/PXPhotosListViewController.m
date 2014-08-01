@@ -55,11 +55,7 @@ static NSString *PhotoCellIdentifier = @"PhotoCellIdentifier";
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]
-                                             initWithTitle:@"回去"
-                                             style:UIBarButtonItemStylePlain
-                                             target:nil
-                                             action:nil];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"回去" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -108,6 +104,7 @@ static NSString *PhotoCellIdentifier = @"PhotoCellIdentifier";
     PXKPhoto *selectedPhoto = self.photosArray[indexPath.item];
     
     photosListViewController.title = selectedPhoto.title;
+    photosListViewController.photo = self.photosArray[indexPath.item];
     
     [self.navigationController pushViewController:photosListViewController animated:YES];
 }
@@ -128,7 +125,7 @@ static NSString *PhotoCellIdentifier = @"PhotoCellIdentifier";
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat photoRatio = [((PXKPhoto *)self.photosArray[indexPath.item]).photoRatio floatValue];
-    return (CGSize){ 160, 160/photoRatio + 46 };
+    return (CGSize){ 160, 160/photoRatio + 60 };
 }
 
 #pragma mark - Accessors
@@ -146,6 +143,7 @@ static NSString *PhotoCellIdentifier = @"PhotoCellIdentifier";
 
 - (void)_startRefresh
 {
+    [self.refreshControl beginRefreshing];
     [PXKPhoto fetchPhotosWithAlbum:self.album page:1 perPage:20 resultBlock:^(NSArray *array, NSError *error) {
         if ( ! error) {
             
